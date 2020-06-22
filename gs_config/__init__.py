@@ -1,4 +1,4 @@
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __description__ = "Guiosoft Python Configuration Class"
 __author_name__ = "Guionardo Furlan"
 __author_email__ = "guionardo@gmail.com"
