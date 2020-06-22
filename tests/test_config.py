@@ -20,6 +20,7 @@ class TestConfig(unittest.TestCase):
         })
 
     def test_simple_default_values(self):
+        d = datetime.now()
         test_case = ConfigMock(auto_load=False)
         self.assertIsInstance(test_case, ConfigMock)
         self.assertEqual(test_case.STRING_CONF, '')
@@ -29,7 +30,7 @@ class TestConfig(unittest.TestCase):
         self.assertEqual(test_case.DEFAULT_CONF, None)
         self.assertEqual(test_case.DATE, date.today())
         self.assertEqual(test_case.DATETIME.strftime('%Y-%m-%d %H:%M:%S'),
-                         datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+                         d.strftime('%Y-%m-%d %H:%M:%S'))
 
     def test_init(self):
         test_case = ConfigMock()
