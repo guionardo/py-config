@@ -35,6 +35,9 @@ class TestConfig(unittest.TestCase):
     def test_init(self):
         test_case = ConfigMock()
         self.assertIsInstance(test_case, ConfigMock)
+
+        self.assertIsInstance(test_case.to_dict(), dict)
+        self.assertIsInstance(test_case.description_dict(), dict)
         self.assertEqual(test_case.STRING_CONF, 'TESTING')
         self.assertEqual(test_case.INT_CONF, 5)
         self.assertEqual(test_case.FLOAT_CONF, 3.14)
