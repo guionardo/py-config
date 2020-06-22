@@ -7,6 +7,8 @@ from tests.mocks.config_mock import ConfigMock, SpecialConfigMock
 
 class TestConfig(unittest.TestCase):
 
+    DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
+
     def setUp(self):
         os.environ.clear()
         os.environ.update({
@@ -29,8 +31,8 @@ class TestConfig(unittest.TestCase):
         self.assertEqual(test_case.BOOL_CONF, False)
         self.assertEqual(test_case.DEFAULT_CONF, None)
         self.assertEqual(test_case.DATE, date.today())
-        self.assertEqual(test_case.DATETIME.strftime('%Y-%m-%d %H:%M:%S'),
-                         d.strftime('%Y-%m-%d %H:%M:%S'))
+        self.assertEqual(test_case.DATETIME.strftime(self.DATE_FORMAT),
+                         d.strftime(self.DATE_FORMAT))
 
     def test_init(self):
         test_case = ConfigMock()
@@ -55,8 +57,8 @@ class TestConfig(unittest.TestCase):
         self.assertEqual(test_case.BOOL_CONF, False)
         self.assertEqual(test_case.DEFAULT_CONF, None)
         self.assertEqual(test_case.DATE, date.today())
-        self.assertEqual(test_case.DATETIME.strftime('%Y-%m-%d %H:%M:%S'),
-                         datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        self.assertEqual(test_case.DATETIME.strftime(self.DATE_FORMAT),
+                         datetime.now().strftime(self.DATE_FORMAT))
 
     def test_special(self):
         test_case = SpecialConfigMock(auto_load=True)
