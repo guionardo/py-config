@@ -28,12 +28,13 @@ def convert(value, data_type, default_value, key_name):
             if not isinstance(default_value, data_type):
                 default_value = value
                 raise DataTypeException(
-                    'Default value must be of same type of data type ({0}) for env {1}'
+                    'Default value must be of same '
+                    'type of data type ({0}) for env {1}'
                     .format(data_type, key_name)
                 )
         else:
             raise DataTypeException(
-                "Invalid data_type {0} for env {1}. Expected: {1}"
+                "Invalid data_type {0} for env {1}. Expected: {2}"
                 .format(data_type,
                         key_name,
                         list(CONFIG_TYPES.keys())))
