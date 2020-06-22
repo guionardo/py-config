@@ -66,5 +66,5 @@ setuptools.setup(
         'python-dotenv==0.13.0',
         'python-dateutil==2.8.1',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.7',
 )
