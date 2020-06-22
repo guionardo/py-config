@@ -25,4 +25,5 @@ class SpecialConfigMock(ConfigClass):
     DATE = ConfigType(
         "DATE", date, date.today(), lambda value: value <= date.today())
     DATETIME = ConfigType(
-        "DATETIME", datetime, datetime.now(), lambda value: value <= datetime.now())
+        "DATETIME", datetime, datetime.now(),
+        lambda value: value <= datetime.now())
