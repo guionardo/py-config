@@ -1,2 +1,3 @@
-# py-config
-Classe de configurações
+# GS PY Config
+
+Configuration class
