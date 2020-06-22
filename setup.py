@@ -54,6 +54,12 @@ setuptools.setup(
     description=_description,
     long_description=long_description,
     long_description_content_type="text/markdown",
+    project_urls={
+        "Source Code": "https://github.com/guionardo/py-config",
+        "Documentation": "https://github.com/guionardo/py-config/wiki",
+        "Bug Tracker": "https://github.com/guionardo/py-config/issues"
+    },
+    keywords="configuration, environment variables",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
