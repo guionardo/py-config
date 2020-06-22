@@ -1,0 +1,4 @@
+coverage==5.1
+python-dateutil==2.8.1
+python-dotenv==0.13.0
+six==1.15.0
