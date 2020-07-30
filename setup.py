@@ -63,8 +63,12 @@ setuptools.setup(
         "Intended Audience :: Developers",
     ],
     install_requires=[
-        'python-dotenv==0.13.0',
+        'python-dotenv==0.14.0',
         'python-dateutil==2.8.1',
     ],
+    project_urls={
+        "Documentation": "https://github.com/guionardo/py-config/wiki",
+        "Source": "https://github.com/guionardo/py-config",
+    },
     python_requires='>=3.7',
 )
