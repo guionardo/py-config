@@ -74,5 +74,9 @@ class TestConfig(unittest.TestCase):
     def test_str(self):
         test_case = ConfigMock()
         as_str = str(test_case)
-        expected = "tests.mocks.config_mock.ConfigMock(BOOL_CONF:True,DATE:datetime.date(2020, 6, 22),DATETIME:datetime.datetime(2020, 6, 22, 10, 10, 10),DEFAULT_CONF:'ANYTHING',FLOAT_CONF:3.14,INT_CONF:5,STRING_CONF:'TESTING')"
+        expected = "tests.mocks.config_mock.ConfigMock(BOOL_CONF:True,"\
+            "DATE:datetime.date(2020, 6, 22),"\
+            "DATETIME:datetime.datetime(2020, 6, 22, 10, 10, 10),"\
+            "DEFAULT_CONF:'ANYTHING',FLOAT_CONF:3.14,"\
+            "INT_CONF:5,STRING_CONF:'TESTING')"
         self.assertEqual(as_str, expected)
