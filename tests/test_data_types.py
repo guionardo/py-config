@@ -1,7 +1,7 @@
 import unittest
 from datetime import date, datetime
 
-from gs_config.data_types import convert
+from config_guiosoft.data_types import convert
 
 
 class TestDataTypes(unittest.TestCase):

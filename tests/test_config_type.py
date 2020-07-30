@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from gs_config.config_type import ConfigType, ConfigTypeException
+from config_guiosoft.config_type import ConfigType, ConfigTypeException
 
 
 class TestConfigType(unittest.TestCase):

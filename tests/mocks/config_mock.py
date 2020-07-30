@@ -1,4 +1,4 @@
-from gs_config import ConfigClass, ConfigType
+from config_guiosoft import ConfigClass, ConfigType
 from datetime import datetime, date
 
 

@@ -2,7 +2,7 @@ from datetime import date, datetime
 
 from dateutil.parser import parse
 
-from gs_config.logger import get_logger
+from config_guiosoft.logger import get_logger
 
 CONFIG_TYPES = {
     str: lambda value: str(value),

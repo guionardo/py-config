@@ -38,7 +38,7 @@ with open("README.md", "r") as fh:
  _description,
  _author_name,
  _author_email,
- _package_name) = get_vars(os.path.join('gs_config', '__init__.py'), [
+ _package_name) = get_vars(os.path.join('config_guiosoft', '__init__.py'), [
      'version',
      'description',
      'author_name',

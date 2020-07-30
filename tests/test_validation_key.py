@@ -1,5 +1,5 @@
 import unittest
-from gs_config.validation_key import ValidationKey, ValidationKeyException
+from config_guiosoft.validation_key import ValidationKey, ValidationKeyException
 
 
 class TestValidationKey(unittest.TestCase):
