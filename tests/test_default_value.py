@@ -1,6 +1,6 @@
 import unittest
 
-from gs_config.default_value import DefaultValue, DefaultValueException
+from config_guiosoft.default_value import DefaultValue, DefaultValueException
 
 
 class TestDefaultValue(unittest.TestCase):
