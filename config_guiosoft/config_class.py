@@ -32,3 +32,9 @@ class ConfigClass:
     def to_dict(self):
         return {key: self._keys[key].value
                 for key in self._keys}
+
+    def __str__(self):
+        class_name = str(self.__class__).split("'")[1]
+        as_str = ','.join(
+            [f'{key}:{repr(getattr(self,key))}' for key in self._keys])
+        return f"{class_name}({as_str})"
